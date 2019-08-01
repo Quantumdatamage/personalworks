@@ -1,0 +1,8 @@
+str = input("What's the string?")
+
+reversedString = ''
+x = len(str)
+while x > 0:
+    reversedString = reversedString + str[x-1]
+    x = x - 1
+print (reversedString)
