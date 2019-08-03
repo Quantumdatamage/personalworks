@@ -1,0 +1,10 @@
+phrase = input("What's the phrase?")
+vowels = "aeiou"
+phrase = phrase.casefold()
+count = {}.fromkeys(vowels,0)
+
+for char in phrase:
+    if char in count:
+        count[char] +=1
+
+print(count)
