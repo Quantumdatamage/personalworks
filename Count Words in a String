@@ -1,0 +1,12 @@
+phrase = open("test.txt","r")
+parsephrase = phrase.read().split()
+phrase.close()
+print("The length of the phrase is: " + str(len(parsephrase)))
+count = 0
+countchar = {}.fromkeys(parsephrase,0)
+for i in parsephrase:
+    count = count+1
+    if i in countchar:
+        countchar[i] +=1
+print("To confirm, the length of the phrase is: " + str(count))
+print(countchar)
